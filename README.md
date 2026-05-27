@@ -1,2 +1,2 @@
 # leetcode_series
-Leetcode Question solution in Cpp
+Leetcode Question solution in Cpp to understand how system works
