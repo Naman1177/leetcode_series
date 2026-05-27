@@ -23,3 +23,6 @@ public:
         return abs(maxn - minn);
     }
 };
+
+
+//using selection sort is very time consuming
