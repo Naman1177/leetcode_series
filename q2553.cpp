@@ -1,13 +1,14 @@
 class Solution {
 public:
     vector<int> separateDigits(vector<int>& nums) {
-        vector<int> answer;
-        for(int i=0;i<size(nums);i++){
-            string str = to_string(nums[i]);
-            for (int j=0; j<str.length();j++){
-                answer.emplace_back(str[j]-'0');
+        vector<int> ans;
+        for(int i = nums.size()-1;i>=0;i--){
+            while(nums[i]>0){
+                ans.push_back(nums[i]%10);
+                nums[i] = nums[i]/10;
             }
         }
-        return answer;
+        reverse(ans.begin(),ans.end());
+        return ans;
     }
 };
